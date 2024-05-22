@@ -1,6 +1,5 @@
 package com.keyin.services;
 
-import com.keyin.interfaces.PaymentProcessor;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
