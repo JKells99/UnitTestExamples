@@ -1,5 +1,6 @@
-package com.keyin;
+package com.keyin.entities;
 
+import com.keyin.entities.Person;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

@@ -1,5 +1,6 @@
-package com.keyin;
+package com.keyin.entities;
 
+import com.keyin.entities.Calculator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -8,11 +9,6 @@ public class CalculatorTest {
 
 
     Calculator calculator = new Calculator();
-
-    @Test
-    public void testInjection(){
-        Assertions.assertEquals(calculator != null);
-    }
 
     @Test
     @DisplayName("Test For Adding")
