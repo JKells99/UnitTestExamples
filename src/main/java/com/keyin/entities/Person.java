@@ -1,4 +1,4 @@
-package com.keyin;
+package com.keyin.entities;
 
 public class Person {
     private String firstName;
