@@ -1,7 +1,5 @@
 package com.keyin.services;
 
-import com.keyin.interfaces.PaymentProcessor;
-
 public class PaymentService {
 
     private final PaymentProcessor paymentProcessor;
