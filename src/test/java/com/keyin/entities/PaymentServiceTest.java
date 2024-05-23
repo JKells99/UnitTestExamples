@@ -17,13 +17,17 @@ public class PaymentServiceTest {
     @Mock
     private PaymentProcessor paymentProcessor;
 
-    @BeforeEach
-    public void setUp() {
-        MockitoAnnotations.openMocks(this);
-        System.out.println("PaymentProcessor mock initialized: " + (paymentProcessor != null));
-        paymentService = new PaymentService(paymentProcessor);
-        System.out.println("PaymentService initialized: " + (paymentService != null));
+    public PaymentServiceTest(){
+        MockitoAnnotations.initMocks(this);
     }
+
+//    @BeforeEach
+//    public void setUp() {
+//        MockitoAnnotations.initMocks(this);
+//        System.out.println("PaymentProcessor mock initialized: " + (paymentProcessor != null));
+//        paymentService = new PaymentService(paymentProcessor);
+//        System.out.println("PaymentService initialized: " + (paymentService != null));
+//    }
 
     @Test
     public void testMakePayment_Success() {
