@@ -19,7 +19,9 @@ public class PaymentServiceTest {
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
+        System.out.println("PaymentProcessor mock initialized: " + (paymentProcessor != null));
         paymentService = new PaymentService(paymentProcessor);
+        System.out.println("PaymentService initialized: " + (paymentService != null));
     }
 
     @Test
