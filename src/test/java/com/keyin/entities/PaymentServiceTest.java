@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
 
 public class PaymentServiceTest {
-    @InjectMocks
+    @Mock
     private PaymentService paymentService;
 
     @Mock
@@ -21,13 +21,13 @@ public class PaymentServiceTest {
         MockitoAnnotations.initMocks(this);
     }
 
-//    @BeforeEach
-//    public void setUp() {
-//        MockitoAnnotations.initMocks(this);
-//        System.out.println("PaymentProcessor mock initialized: " + (paymentProcessor != null));
-//        paymentService = new PaymentService(paymentProcessor);
-//        System.out.println("PaymentService initialized: " + (paymentService != null));
-//    }
+    @BeforeEach
+    public void setUp() {
+        MockitoAnnotations.initMocks(this);
+        System.out.println("PaymentProcessor mock initialized: " + (paymentProcessor != null));
+        paymentService = new PaymentService(paymentProcessor);
+        System.out.println("PaymentService initialized: " + (paymentService != null));
+    }
 
     @Test
     public void testMakePayment_Success() {
