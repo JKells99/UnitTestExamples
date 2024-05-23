@@ -1,4 +1,4 @@
-package com.keyin.services;
+package com.keyin.entities;
 
 public class StripePaymentProcessor implements PaymentProcessor {
 

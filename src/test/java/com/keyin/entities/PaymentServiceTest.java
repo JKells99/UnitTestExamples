@@ -1,7 +1,5 @@
 package com.keyin.entities;
 
-import com.keyin.services.PaymentProcessor;
-import com.keyin.services.PaymentService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
