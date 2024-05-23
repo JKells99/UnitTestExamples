@@ -2,7 +2,7 @@ package com.keyin.entities;
 
 public class PaymentService {
 
-    private final PaymentProcessor paymentProcessor;
+    private PaymentProcessor paymentProcessor;
 
     public PaymentService(PaymentProcessor paymentProcessor){
         this.paymentProcessor = paymentProcessor;
