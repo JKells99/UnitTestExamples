@@ -26,6 +26,7 @@ public class PaymentServiceTest {
 
     @Test
     public void testMakePayment_Success() {
+
         double amount = 100.0;
         when(paymentProcessor.processPayment(amount)).thenReturn(true);
 
